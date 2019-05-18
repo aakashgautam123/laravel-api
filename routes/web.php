@@ -18,7 +18,7 @@ Route::get('/', function () {
 Route::get('/products',  function(){
 
 
-	$products = ['mobile','laptop','condom','pussy','vagina'];
+	$products = ['mobile','laptop','headphone','mouse','speaker'];
 
 	return json_encode($products);
 })->middleware('throttle:2,1');
